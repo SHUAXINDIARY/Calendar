@@ -1,0 +1,185 @@
+body,
+p {
+    margin: 0;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#hint {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 1080px;
+    position: relative;
+}
+
+.box>div {
+    height: 100%;
+}
+
+/* 左边导航 */
+.left {
+    float: left;
+    width: 200px;
+    /* width: 10vw; */
+    background-color: rgb(139, 139, 139);
+}
+
+.left .selectBtn {
+    cursor: pointer;
+    width: 90%;
+    margin: 1rem auto;
+    text-indent: 1rem;
+    color: #ccc;
+    background-color: #393d41;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left .showNow {
+    display: flex;
+    justify-content: space-around;
+}
+
+i {
+    margin-right: 1rem;
+}
+
+.left>div {
+    position: relative;
+}
+
+.left>div .list {
+    position: absolute;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    visibility: hidden;
+    height: 500px;
+    overflow-y: scroll;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left>div .list li {
+    height: 16px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.left>div .list li:hover {
+    background-color: #4ebbf0;
+    color: #ffffff;
+}
+
+/* 右边主要内容 */
+.right {
+    /* width: 90vw; */
+    margin-left: 200px;
+    background-color: #f9f9f9;
+    overflow-x: scroll;
+    /* min-width: 1000px; */
+}
+
+.right .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* border-bottom: 2px solid #ffffff; */
+    height: 70px;
+}
+
+.right .header li {
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
+    text-align: center;
+    align-self: center;
+}
+
+.right .body {
+    height: auto;
+}
+
+.right .body .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.right .body .card ul {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right .body .card ul li {
+    width: 148px;
+    height: 88px;
+    border: 1px solid lightgray;
+    background-color: #ffffff;
+    margin: 1rem 0;
+    position: relative;
+    /* text-align: center; */
+}
+
+.right .body .card ul li div {
+    text-indent: 1rem;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.right .body .card ul li span {
+    position: absolute;
+    display: inline-block;
+    border: 1px solid lightgray;
+    padding: 3px;
+    right: -1px;
+    bottom: -1px;
+    font-size: 10px;
+}
+
+.right .body .card ul li:first-child,
+.right .body .card ul li:last-child {
+    background-color: #99ea5f;
+}
+
+/* 休息日字体颜色 */
+.rest span {
+    color: red;
+}
+
+/* 遮住非本月的表格 */
+.other {
+    opacity: 0.5;
+}

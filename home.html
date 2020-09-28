@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日历</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="menuOfYear">
+                <div class="selectBtn" id="yearBtn">
+                    <span id="year">请选择年份</span>
+                    <i class="iconfont icon-down" id="yearDown"></i>
+                </div>
+                <ul id="yearlist" class="list"></ul>
+            </div>
+            <div class="menuOfMonth">
+                <div class="selectBtn" id="monBtn">
+                    <span id="month">请选择月份</span>
+                    <i class="iconfont icon-down" id="monDown"></i>
+                </div>
+                <ul id="monlist" class="list"></ul>
+            </div>
+            <div class="selectBtn showNow">
+                <p>TODAY</p>
+                <p id="today"></p>
+            </div>
+        </div>
+        <div class="right">
+            <ul class="header">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+            <div class="body" id="body">
+                <p id="hint">请先选择年份和月份</p>
+                <div class="card" id="card">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/until.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+
+</html>
